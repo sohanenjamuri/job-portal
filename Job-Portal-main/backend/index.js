@@ -35,7 +35,8 @@ app.use(cookieParser());
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://job-portal-one-virid.vercel.app"
+    "https://job-portal-one-virid.vercel.app",
+    "https://job-portal-six-jade.vercel.app/"
   ],
   credentials: true,
 };
