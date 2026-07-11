@@ -31,10 +31,10 @@ app.use("/api/company", companyRouter);
 app.use("/api/job", jobRouter);
 app.use("/api/application", applicationRouter);
 
-app.use(express.static(path.join(__dirname, "frontend/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
-});
+// app.use(express.static(path.join(__dirname, "frontend/dist")));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+// });
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port: ${process.env.PORT}`);
